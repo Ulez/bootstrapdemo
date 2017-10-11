@@ -9,10 +9,35 @@
     <script src="jquery/jquery-3.2.1.min.js"></script>
     <script src="dist/js/bootstrap.min.js"></script>
     <style type="text/css">
-        .test{
-            height: 200px;
-            background: red;
+        @media (max-width: 767px) {
+            .test{
+                height: 100px;
+                background: red;
+            }
         }
+        /* 小屏幕（平板，大于等于 768px） */
+        @media (min-width: 768px) { 
+            .test{
+                height: 200px;
+                background: blue;
+            }
+        }
+
+        /* 中等屏幕（桌面显示器，大于等于 992px） */
+        @media (min-width: 992px) {   
+            .test{
+                height: 300px;
+                background: red;
+            }
+        }
+
+        /* 大屏幕（大桌面显示器，大于等于 1200px） */
+        @media (min-width: 1200px) {   
+            .test{
+                height: 600px;
+                background: blue;
+            }
+        } 
     </style>
 </head>
 <body>
