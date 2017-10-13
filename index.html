@@ -183,6 +183,28 @@
             panel-footer
         </div>
     </div>
+    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal">
+        弹窗
+    </button>
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button class="close" data-dismiss="modal">
+                        <span>&times;</span><span class="sr-only">关闭弹窗</span>
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">标题</h4>
+                </div>   
+                <div class="modal-body">
+                    modal-body
+                </div> 
+                <div class="modal-footer">
+                    <button class="btn btn-default" data-dismiss="modal">关闭</button>
+                    <button class="btn btn-primary">保存</button>
+                </div>           
+            </div>           
+        </div>    
+    </div>
     <button class="btn btn-default btn-sm">按钮</button>
     <button class="btn btn-success btn-lg">按钮</button>
     <button class="btn btn-info">按钮</button>
